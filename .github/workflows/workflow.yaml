@@ -1,19 +1,17 @@
-on: 
-  push:
-    branches: [ master ]
+on: [push]
+
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
-    - name: "run the action"
+    - name: run the action
       id: hello
       uses: ./
       with:
-        myInput: "Man"
-     - name: output the memory
-       run: |
-         echo ${{ steps.hello.outputs.memory }}
-         echo "Fuck You All Successfully"
-        
+        myInput: 'Chad'
+    - name: output the memory
+      run: |
+        echo ${{ steps.hello.outputs.memory }}
+        echo "total memory successfully output"
