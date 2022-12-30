@@ -1,0 +1,15 @@
+name: 'container action'
+description: 'DevSecOps Container'
+author: "Man Sinh Lee"
+inputs:
+  myInputs:
+    description: 'greeting to use'
+    required: true
+    default: "Welcome DevSecOps"
+outputs:
+  myOutputs:
+    description: 'total memory'
+runs:
+  using: "Docker"
+  image: "Dockerfile"
+  
