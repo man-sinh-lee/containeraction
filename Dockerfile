@@ -1,4 +1,4 @@
-FROM debian:9.5-slim
+FROM ubuntu:22.04-LTS
 
 ADD entrypoint.sh /entrypoint.sh
 
