@@ -14,4 +14,5 @@ jobs:
     - name: output the memory
       run: |
         echo ${{ steps.hello.outputs.memory }}
-        echo "total memory successfully output"
+        echo ${{ steps.hello.outputs.disk_usage }}
+        echo ${{ steps.hello.outputs.list_most_memory_consumption }}
